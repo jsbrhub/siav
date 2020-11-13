@@ -1,0 +1,11 @@
+php_value memory_limit 30M
+php_value post_max_size 100M
+php_value upload_max_filesize 30M
+
+RewriteEngine On
+
+#PAGINAS ANALISTA
+RewriteRule ^([0-9A-z_-]+)$ $1.php [NC,L]
+
+# REST API AUTOMATICAS
+RewriteRule ^api\/([0-9A-z_-]+)$ api/rest-$1.php [NC,L]

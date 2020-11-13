@@ -1,0 +1,19 @@
+[producao]
+server    = "localhost";
+db	  = "siav";
+sistema	  = "siav";
+username  = "root";
+pw 	  = "root";
+tipo_sgbd = "mysql:host";
+label_db  = "dbname";
+
+[login-unico]
+client_id = "siav.sudam.gov.br"
+secret = "XUZEwcL8NcKhabX5AxQzYy9BoOLdL00QbkpC3cArCxYbqXW0hxXj6NzdmPSX_Ri0kE9lNNxL4TDl-pIgJhyLvA"
+redirect_uri = "http://siav.sudam.gov.br"
+host = "staging.acesso.gov.br"
+
+[LDAP]
+servidor  = "ldap://172.16.107.3:389";
+dominio	  = "SUDAM";
+dc	  = "intra";

@@ -1,0 +1,11 @@
+<?php
+
+require_once(dirname(__FILE__)."/classes/class.LoginUnico.php");
+
+require_once(dirname(__FILE__)."/classes/class.Controle.php");
+
+$oControle = new Controle();
+
+session_destroy();
+
+header("Location: ".LoginUnico::getUrlLogout());

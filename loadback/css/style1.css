@@ -1,0 +1,183 @@
+.panel-default {
+    opacity: 0.9;
+    margin-top:120px;
+}
+.form-group.last { margin-bottom:0px; }
+
+
+.radio {
+    padding-left: 50px; }
+.radio label {
+    display: inline-block;
+    position: relative;
+    padding-left: 5px; }
+.radio label::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    left: 0;
+    margin-left: -20px;
+    border: 1px solid #cccccc;
+    border-radius: 50%;
+    background-color: #fff;
+    -webkit-transition: border 0.15s ease-in-out;
+    -o-transition: border 0.15s ease-in-out;
+    transition: border 0.15s ease-in-out; }
+.radio label::after {
+    display: inline-block;
+    position: absolute;
+    content: " ";
+    width: 11px;
+    height: 11px;
+    left: 3px;
+    top: 3px;
+    margin-left: -20px;
+    border-radius: 50%;
+    background-color: #555555;
+    -webkit-transform: scale(0, 0);
+    -ms-transform: scale(0, 0);
+    -o-transform: scale(0, 0);
+    transform: scale(0, 0);
+    -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+    -moz-transition: -moz-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+    -o-transition: -o-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+    transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33); }
+.radio input[type="radio"] {
+    opacity: 0; }
+.radio input[type="radio"]:focus + label::before {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px; }
+.radio input[type="radio"]:checked + label::after {
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1); }
+.radio input[type="radio"]:disabled + label {
+    opacity: 0.65; }
+.radio input[type="radio"]:disabled + label::before {
+    cursor: not-allowed; }
+.radio.radio-inline {
+    margin-top: 0; }
+
+.radio-primary input[type="radio"] + label::after {
+    background-color: #428bca; }
+.radio-primary input[type="radio"]:checked + label::before {
+    border-color: #428bca; }
+.radio-primary input[type="radio"]:checked + label::after {
+    background-color: #428bca; }
+
+
+.cb-slideshow,
+.cb-slideshow:after { 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0; 
+}
+.cb-slideshow:after { 
+    content: '';
+    background: transparent;
+}
+.cb-slideshow li span { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: 0;
+	-webkit-backface-visibility: hidden;
+    -webkit-animation: imageAnimation 16s linear infinite 0s;
+    -moz-animation: imageAnimation 16s linear infinite 0s;
+    -o-animation: imageAnimation 16s linear infinite 0s;
+    -ms-animation: imageAnimation 16s linear infinite 0s;
+    animation: imageAnimation 16s linear infinite 0s;
+}
+.cb-slideshow li div h3 { 
+    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+    font-size: 240px;
+    padding: 0;
+    line-height: 200px; 
+}
+.cb-slideshow li:nth-child(1) span { 
+    background-image: url(../images/1.jpg) ;
+}
+.cb-slideshow li:nth-child(2) span { 
+    background-image: url(../images/4.jpg);
+    -webkit-animation-delay: 8s;
+    -moz-animation-delay: 8s;
+    -o-animation-delay: 8s;
+    -ms-animation-delay: 8s;
+    animation-delay: 8s;
+}
+/* Animation for the slideshow images */
+@-webkit-keyframes imageAnimation { 
+    0% { opacity: 0;  -webkit-animation-timing-function: ease-in; }
+    4% { opacity: 1; -webkit-animation-timing-function: ease-out; }
+    16% { opacity: 1 }
+    33% { opacity: 1 }
+    49% { opacity: 1 }
+    55% { opacity: 0 }
+    70% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-moz-keyframes imageAnimation {
+    0% { opacity: 0;  -webkit-animation-timing-function: ease-in; }
+    4% { opacity: 1; -webkit-animation-timing-function: ease-out; }
+    16% { opacity: 1 }
+    33% { opacity: 1 }
+    49% { opacity: 1 }
+    55% { opacity: 0 }
+    70% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-o-keyframes imageAnimation {
+    0% { opacity: 0;  -webkit-animation-timing-function: ease-in; }
+    4% { opacity: 1; -webkit-animation-timing-function: ease-out; }
+    16% { opacity: 1 }
+    33% { opacity: 1 }
+    49% { opacity: 1 }
+    55% { opacity: 0 }
+    70% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-ms-keyframes imageAnimation {
+    0% { opacity: 0;  -webkit-animation-timing-function: ease-in; }
+    4% { opacity: 1; -webkit-animation-timing-function: ease-out; }
+    16% { opacity: 1 }
+    33% { opacity: 1 }
+    49% { opacity: 1 }
+    55% { opacity: 0 }
+    70% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@keyframes imageAnimation {
+    0% { opacity: 0;  -webkit-animation-timing-function: ease-in; }
+    4% { opacity: 1; -webkit-animation-timing-function: ease-out; }
+    16% { opacity: 1 }
+    33% { opacity: 1 }
+    49% { opacity: 1 }
+    55% { opacity: 0 }
+    70% { opacity: 0 }
+    100% { opacity: 0 }
+}
+/* Show at least something when animations not supported */
+.no-cssanimations .cb-slideshow li span{
+	opacity: 1;
+}
+
+@media screen and (max-width: 1140px) { 
+    .cb-slideshow li div h3 { font-size: 140px }
+}
+@media screen and (max-width: 600px) { 
+    .cb-slideshow li div h3 { font-size: 80px }
+}

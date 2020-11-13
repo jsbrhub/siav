@@ -1,0 +1,16 @@
+.box-info{
+    background: #f1f1fd;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.bg-yellow{
+    background: #f4ffba;
+}
+
+.rel-filtros{
+    background: ghostwhite;
+    padding: 20px;
+    border-radius: 5px;
+}
